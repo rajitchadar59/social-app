@@ -73,7 +73,7 @@ const Home = () => {
         onHomeClick={() => setView('feed')}
         handleLogout={() => {
           localStorage.clear();
-          window.location.href = '/auth';
+          window.location.href = '/';
         }}
       />
 
