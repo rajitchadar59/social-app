@@ -51,9 +51,3 @@ Every user has a dedicated profile page showcasing their posts in a clean, Insta
 
 ---
 
-## ⚙️ Installation & Setup
-
-1. **Clone the Repository:**
-   ```bash
-   git clone [https://github.com/your-username/taskplanet.git](https://github.com/your-username/taskplanet.git)
-   cd taskplanet
