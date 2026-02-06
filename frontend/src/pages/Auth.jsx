@@ -43,7 +43,6 @@ const Auth = () => {
 
   return (
     <>
-     
       <AppBar
         position="sticky"
         elevation={0}
@@ -73,7 +72,6 @@ const Auth = () => {
         </Toolbar>
       </AppBar>
 
-      
       <Container maxWidth="xs">
         <Box
           sx={{
@@ -114,6 +112,7 @@ const Auth = () => {
                   size="small"
                   label="Username"
                   margin="normal"
+                  required
                   onChange={(e) =>
                     setFormData({ ...formData, username: e.target.value })
                   }
@@ -124,7 +123,9 @@ const Auth = () => {
                 fullWidth
                 size="small"
                 label="Email"
+                type="email"
                 margin="normal"
+                required
                 onChange={(e) =>
                   setFormData({ ...formData, email: e.target.value })
                 }
@@ -136,6 +137,7 @@ const Auth = () => {
                 type="password"
                 label="Password"
                 margin="normal"
+                required
                 onChange={(e) =>
                   setFormData({ ...formData, password: e.target.value })
                 }
