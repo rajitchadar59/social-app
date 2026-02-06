@@ -21,7 +21,7 @@ const Home = () => {
 
   const fetchPosts = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/posts');
+      const res = await axios.get('https://social-app-il4g.onrender.com/api/posts');
       setPosts(res.data);
     } catch (err) {
       console.error('Fetch Error:', err);
@@ -40,7 +40,7 @@ const Home = () => {
     if (image) formData.append('image', image);
 
     try {
-      await axios.post('http://localhost:5000/api/posts', formData, {
+      await axios.post('https://social-app-il4g.onrender.com/api/posts', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
           Authorization: token,
@@ -55,7 +55,7 @@ const Home = () => {
   const handleLike = async (postId) => {
     try {
       await axios.put(
-        `http://localhost:5000/api/posts/${postId}/like`,
+        `https://social-app-il4g.onrender.com/api/posts/${postId}/like`,
         {},
         { headers: { Authorization: token } }
       );
@@ -86,7 +86,7 @@ const Home = () => {
           <div className="main-content">
             {view === 'feed' ? (
               <>
-                {/* ---------------- LEFT SIDEBAR ---------------- */}
+                
                 <div className="sidebar">
                   <div>
                     <Typography variant="h6" fontWeight="800" color="#1e293b">
@@ -109,7 +109,7 @@ const Home = () => {
                   </div>
                 </div>
 
-                {/* ---------------- FEED (CENTERED) ---------------- */}
+              
                 <div className="feed-container">
                   <div
                     style={{

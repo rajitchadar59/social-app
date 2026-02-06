@@ -17,7 +17,7 @@ const ProfileGrid = ({ posts, username }) => {
   return (
     <div className="profile-wrapper">
       
-      {/* -------- PROFILE HEADER -------- */}
+   
       <div className="profile-header">
         <Avatar className="profile-avatar">
           {username?.[0]?.toUpperCase()}
@@ -34,7 +34,7 @@ const ProfileGrid = ({ posts, username }) => {
         </div>
       </div>
 
-      {/* -------- POSTS GRID -------- */}
+
       <div className="profile-grid">
         {myPosts.length > 0 ? (
           myPosts.map(post => (
@@ -48,7 +48,7 @@ const ProfileGrid = ({ posts, username }) => {
                 </div>
               )}
 
-              {/* overlay */}
+      
               <div className="grid-overlay">
                 <div>
                   <Favorite fontSize="small" />

@@ -3,22 +3,22 @@ import { createTheme } from '@mui/material/styles';
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#00C853', // TaskPlanet jaisa vibrant Green
+      main: '#00C853', 
       contrastText: '#fff',
     },
     secondary: {
-      main: '#263238', // Dark Grey for text
+      main: '#263238', 
     },
     background: {
-      default: '#f4f6f8', // Light Grey background
+      default: '#f4f6f8', 
     }
   },
   shape: {
-    borderRadius: 12, // Modern Rounded corners
+    borderRadius: 12, 
   },
   typography: {
     fontFamily: '"Poppins", "Roboto", "Arial", sans-serif',
-    button: { textTransform: 'none', fontWeight: 600 } // Professional buttons
+    button: { textTransform: 'none', fontWeight: 600 } 
   }
 });
 

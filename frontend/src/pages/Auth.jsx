@@ -23,7 +23,7 @@ const Auth = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const url = `http://localhost:5000/api/auth/${isSignup ? 'register' : 'login'}`;
+    const url = `https://social-app-il4g.onrender.com/api/auth/${isSignup ? 'register' : 'login'}`;
 
     try {
       const { data } = await axios.post(url, formData);
@@ -43,7 +43,7 @@ const Auth = () => {
 
   return (
     <>
-      {/* ---------- NAVBAR ---------- */}
+     
       <AppBar
         position="sticky"
         elevation={0}
@@ -73,7 +73,7 @@ const Auth = () => {
         </Toolbar>
       </AppBar>
 
-      {/* ---------- FORM ---------- */}
+      
       <Container maxWidth="xs">
         <Box
           sx={{

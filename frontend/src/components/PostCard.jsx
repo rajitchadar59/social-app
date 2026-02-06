@@ -11,7 +11,7 @@ const PostCard = ({ post, currentUserId, onLike, fetchPosts }) => {
 
   const handleComment = async () => {
     if (!commentText.trim()) return;
-    await axios.post(`http://localhost:5000/api/posts/${post._id}/comment`, { text: commentText }, { headers: { 'Authorization': token } });
+    await axios.post(`https://social-app-il4g.onrender.com/api/posts/${post._id}/comment`, { text: commentText }, { headers: { 'Authorization': token } });
     setCommentText('');
     fetchPosts();
   };
