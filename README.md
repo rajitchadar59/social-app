@@ -2,6 +2,8 @@
 
 **TaskPlanet** is a full-stack (MERN) social media application tailored for developers and tech enthusiasts. It provides a clean and modern "Glassmorphism" interface for users to share their coding journeys, DSA problems, and technical insights.
 
+Live - https://social-app-eight-khaki.vercel.app/
+
 ---
 
 ## 📸 Project Showreel
